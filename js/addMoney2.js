@@ -9,7 +9,10 @@ const pinNumber = getInputFieldValueById('input-pin-number');
 //wrong way to verify. do not try it at your serious project
 
 if(pinNumber === 1234){
+const balance = getTextFieldValueById('account-balance');
+const newBalance = balance + addMoney;
 
+document.getElementById('account-balance').innerText = newBalance
 }
 
 else{
